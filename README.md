@@ -52,7 +52,12 @@ Now you should have everything setup and checked out to a 'carddav2fb' directory
 ### Windows
 
 1. Download PHP from [php.net](http://windows.php.net/download/). Extract it to `C:\PHP`.
-2. Start -> cmd. Run `C:\PHP\php.exe C:\path\to\carddav2fb\carddav2fb.php`
+2. Enable the following 'dynamic extensions' by removing the ';' at those entries in the php.ini file:
+extension=php_curl.dll
+extension=php_ftp.dll
+extension=php_mbstring.dll
+extension=php_mysqli.dll
+3. Start -> cmd. Run `C:\PHP\php.exe C:\path\to\carddav2fb\carddav2fb.php`
 
 ## config.php Example (owncloud)
 
